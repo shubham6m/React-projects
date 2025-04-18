@@ -3,21 +3,23 @@ import { useState } from "react";
 export default function Ludoboard() {
   let [moves, setMoves] = useState({ blue: 0, red: 0, yellow: 0, green: 0 });
 
-  //for blue moves
-  // let updateBlue = () => {
-  //   // setMoves({ ...setMoves, blue: moves.blue + 1 });
-  //   setMoves((prevmoves)=>{
-  //    return {...prevmoves, blue: prevmoves.blue+1}
-  //   })
-  // };
+  // for blue moves
+  let updateBlue = () => {
+    // setMoves({ ...setMoves, blue: moves.blue + 1 });
+    setMoves((prevmoves)=>{
+     return {...prevmoves, blue: prevmoves.blue+1}
+    })
+  };
 
   //for blue updates
-  let[arr,setArr] = useState(["no moves"]);
+  // let[arr,setArr] = useState(["no moves"]);
 
-  let updateBlue =()=>{
-    arr.push("blue moves");
-    setArr(arr);
-  }
+  // let updateBlue =()=>{
+  //   arr.push("blue moves");
+  //   // setArr(arr);
+  //   //means here we need to also need to spread array : means both array & objects need to spread array
+  //   setArr([...arr])
+  // }
 
   // for red moves
   let updateRed = () => {
